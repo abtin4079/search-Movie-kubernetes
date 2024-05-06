@@ -1,0 +1,13 @@
+#PV
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv
+spec:
+  capacity:
+    storage: 300Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/home/storage"
+
